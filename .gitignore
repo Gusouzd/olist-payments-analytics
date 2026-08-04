@@ -1,2 +1,5 @@
 *.ipynb
 
+.env
+
+gcp_key.json
