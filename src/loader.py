@@ -3,7 +3,7 @@ from google.cloud.bigquery import LoadJobConfig, WriteDisposition
 import logging
 import os
 
-def carregar_tabelas(df, nome_tabela):
+def carregar_tabelas(nome_tabela, df):
 
     client = bigquery.Client(project=os.environ["GCP_PROJECT_ID"])
     destino = f'{os.environ["GCP_PROJECT_ID"]}.raw_olist.{nome_tabela}'

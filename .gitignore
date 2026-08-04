@@ -2,4 +2,4 @@
 
 .env
 
-gcp_key.json
+*.json
